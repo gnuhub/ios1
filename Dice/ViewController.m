@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)beginPlay:(id)sender {
+    //获取两个随机数
+    NSInteger left = arc4random()%5 + 1;
+    NSInteger right = arc4random()%5 + 1;
+    self.leftDice.text=[NSString stringWithFormat:@"%d",left];
+    self.rightDice.text=[NSString stringWithFormat:@"%d",right];
+}
 @end
